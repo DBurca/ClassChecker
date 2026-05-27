@@ -1,0 +1,7 @@
+services:
+  classchecker:
+    build: .
+    restart: unless-stopped
+    env_file: .env
+    volumes:
+      - ./config.py:/app/config.py:ro
